@@ -19,9 +19,9 @@
 }
 
 .active {
-  @apply font-medium tracking-wide text-cyan-600 transition-colors duration-200;
+  @apply btn btn-ghost font-medium tracking-wide text-cyan-600 transition-colors duration-200;
 }
 
 .default {
-  @apply font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-cyan-600;
+  @apply btn btn-ghost font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-cyan-600;
 }
