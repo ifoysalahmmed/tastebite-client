@@ -28,16 +28,8 @@ const Header = () => {
               tabIndex={0}
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
-              <li className="dropdown">
-                <label tabIndex={0} className="">
-                  Chefs
-                </label>
-                <ul
-                  tabIndex={0}
-                  className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
-                >
-                  {/*  */}
-                </ul>
+              <li>
+                <Link to="/">Home</Link>
               </li>
               <li>
                 <Link to="/blog">Blog</Link>
@@ -58,7 +50,7 @@ const Header = () => {
                 to="/"
                 className={({ isActive }) => (isActive ? "active" : "default")}
               >
-                Chefs
+                Home
               </NavLink>
             </li>
             <li>
