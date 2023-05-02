@@ -5,9 +5,12 @@ import { AuthContext } from "../../../context/AuthProvider";
 import { getAuth, updateProfile } from "firebase/auth";
 import app from "../../../firebase/firebase.config";
 import { toast } from "react-toastify";
+import useFirebase from "../../../Hook/useFirebase";
 
 const Registration = () => {
   const { createUser } = useContext(AuthContext);
+
+  const { handleGoogleLogin, handleGithubLogin } = useFirebase();
 
   const [name, setName] = useState("");
   const [photo, setPhoto] = useState("");
@@ -79,10 +82,6 @@ const Registration = () => {
       .catch((error) => {});
   };
 
-  // const verifyEmail = () => {
-  //   sendEmailVerification(auth.currentUser).then(() => {});
-  // };
-
   return (
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col lg:flex-row-reverse">
@@ -147,11 +146,17 @@ const Registration = () => {
             </div>
           </form>
           <div className="btn-group btn-group-vertical mx-4 mb-4">
-            <button className="btn btn-outline btn-accent w-full mb-2">
+            <button
+              onClick={handleGoogleLogin}
+              className="btn btn-outline btn-accent w-full mb-2"
+            >
               <FaGoogle className="mr-2"></FaGoogle>
               Signup with Google
             </button>
-            <button className="btn btn-outline btn-secondary">
+            <button
+              onClick={handleGithubLogin}
+              className="btn btn-outline btn-secondary"
+            >
               <FaGithub className="mr-2"></FaGithub>
               Signup with Github
             </button>
