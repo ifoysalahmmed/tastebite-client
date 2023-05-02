@@ -3,9 +3,12 @@ import { Link } from "react-router-dom";
 import { FaGoogle, FaGithub } from "react-icons/fa";
 import { AuthContext } from "../../../context/AuthProvider";
 import { toast } from "react-toastify";
+import useFirebase from "../../../Hook/useFirebase";
 
 const Login = () => {
   const { signIn } = useContext(AuthContext);
+
+  const { handleGoogleLogin, handleGithubLogin } = useFirebase();
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -91,11 +94,17 @@ const Login = () => {
             </div>
           </form>
           <div className="btn-group btn-group-vertical mx-4 mb-4">
-            <button className="btn btn-outline btn-accent w-full mb-2">
+            <button
+              onClick={handleGoogleLogin}
+              className="btn btn-outline btn-accent w-full mb-2"
+            >
               <FaGoogle className="mr-2"></FaGoogle>
               Login with Google
             </button>
-            <button className="btn btn-outline btn-secondary">
+            <button
+              onClick={handleGithubLogin}
+              className="btn btn-outline btn-secondary"
+            >
               <FaGithub className="mr-2"></FaGithub>
               Login with Github
             </button>
