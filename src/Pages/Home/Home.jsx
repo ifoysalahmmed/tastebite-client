@@ -2,6 +2,7 @@ import React from "react";
 import Lottie from "lottie-react";
 import cooking from "../../assets/cooking.json";
 import FoodCategories from "./FoodCategories";
+import Chefs from "./Chefs";
 
 const Home = () => {
   return (
@@ -13,7 +14,7 @@ const Home = () => {
             <span className="inline-block text-blue-400">for food?</span>
           </h2>
           <p className="text-base text-white md:text-lg mb-4">
-            Explore Delicious Recipes and Cooking Tips Find <br /> inspiration
+            Explore Delicious Recipes and Cooking Tips Find inspiration
             for your next meal with our collection of mouth-watering recipes.
             From quick and easy dinners to show-stopping desserts, we have
             something for every taste and occasion. Our expert tips and tricks
@@ -21,7 +22,7 @@ const Home = () => {
           </p>
           <button className="btn btn-info">Call to Action</button>
         </div>
-        <div className="relative  ">
+        <div className="relative">
           <div className="w-full lg:w-4/5 lg:ml-auto h-56 sm:h-96">
             <Lottie animationData={cooking} loop={true} />
           </div>
@@ -34,6 +35,9 @@ const Home = () => {
             <ul className=" mt-4 pl-8 list-disc">
               <FoodCategories></FoodCategories>
             </ul>
+          </div>
+          <div className="col-span-9 px-2 py-4 bg-slate-600 rounded-lg">
+            <Chefs></Chefs>
           </div>
         </div>
       </div>

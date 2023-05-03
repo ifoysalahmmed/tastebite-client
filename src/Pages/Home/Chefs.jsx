@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import ChefCard from "./ChefCard";
 
 const Chefs = () => {
   const [chefs, setChefs] = useState([]);
@@ -10,9 +11,9 @@ const Chefs = () => {
   }, []);
 
   return (
-    <div className="md:grid grid-cols-3 gap-4 p-4">
+    <div className="md:grid grid-cols-2 gap-4 p-4">
       {chefs.map((chef) => (
-        <p>{chef.name}</p>
+        <ChefCard key={chef.id} chef={chef}></ChefCard>
       ))}
     </div>
   );
