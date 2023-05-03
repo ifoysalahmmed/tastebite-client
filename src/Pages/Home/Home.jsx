@@ -9,11 +9,11 @@ const Home = () => {
     <div className="my-container">
       <div className="flex flex-col items-center justify-between lg:flex-row">
         <div className="banner-text">
-          <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
+          <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight sm:text-4xl sm:leading-none">
             Are you <br className="hidden md:block" /> Ready{" "}
             <span className="inline-block text-blue-400">for food?</span>
           </h2>
-          <p className="text-base text-white md:text-lg mb-4">
+          <p className="text-base md:text-lg mb-4">
             Explore Delicious Recipes and Cooking Tips Find inspiration for your
             next meal with our collection of mouth-watering recipes. From quick
             and easy dinners to show-stopping desserts, we have something for

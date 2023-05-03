@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import logo from "/logo.jpg";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../context/AuthProvider";
-import FoodCategories from "../../Pages/Home/FoodCategories";
 
 const Header = () => {
   const { user, logOut } = useContext(AuthContext);
@@ -38,17 +37,6 @@ const Header = () => {
               tabIndex={0}
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
-              <li className="dropdown">
-                <label tabIndex={0} className="">
-                  Chefs
-                </label>
-                <ul
-                  tabIndex={0}
-                  className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
-                >
-                  <FoodCategories></FoodCategories>
-                </ul>
-              </li>
               <li>
                 <Link to="/">Home</Link>
               </li>

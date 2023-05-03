@@ -16,8 +16,8 @@ const Blog = () => {
         </Pdf>
       </div>
       <div ref={ref}>
-        <div className="mb-6 space-y-4 bg-slate-800 rounded-lg shadow-lg p-4">
-          <h2 className="text-xl text-white font-medium">
+        <div className="mb-6 space-y-4 bg-green-200 rounded-lg shadow-lg p-4">
+          <h2 className="text-xl font-medium">
             Tell us the differences between uncontrolled and controlled
             components.
           </h2>
@@ -42,8 +42,8 @@ const Blog = () => {
             forms that will be submitted to a server.
           </p>
         </div>
-        <div className="my-6 space-y-4 bg-slate-800 rounded-lg shadow-lg p-4">
-          <h2 className="text-xl text-white font-medium">
+        <div className="my-6 space-y-4 bg-green-200 rounded-lg shadow-lg p-4">
+          <h2 className="text-xl font-medium">
             How to validate React props using PropTypes?
           </h2>
           <p>
@@ -54,8 +54,8 @@ const Blog = () => {
             development process.
           </p>
         </div>
-        <div className="my-6 space-y-4 bg-slate-800 rounded-lg shadow-lg p-4">
-          <h2 className="text-xl text-white font-medium">
+        <div className="my-6 space-y-4 bg-green-200 rounded-lg shadow-lg p-4">
+          <h2 className="text-xl font-medium">
             Tell us the difference between nodejs and express js.
           </h2>
           <p>
@@ -76,8 +76,8 @@ const Blog = () => {
             development tasks.
           </p>
         </div>
-        <div className="my-6 space-y-4 bg-slate-800 rounded-lg shadow-lg p-4">
-          <h2 className="text-xl text-white font-medium">
+        <div className="my-6 space-y-4 bg-green-200 rounded-lg shadow-lg p-4">
+          <h2 className="text-xl font-medium">
             What is a custom hook, and why will you create a custom hook?
           </h2>
           <p>
@@ -88,13 +88,12 @@ const Blog = () => {
             reusable code.
           </p>
           <p>
-            A custom hook is created by using the '
-            <span className="text-white">use</span>' prefix in the function name
-            and leveraging existing hooks or creating new ones to encapsulate
-            the logic. A custom hook can return anything that a regular function
-            can return, but it typically returns an array or object containing
-            state values and functions to manipulate that state. That's why I
-            will create a custom hook.
+            A custom hook is created by using the 'use' prefix in the function
+            name and leveraging existing hooks or creating new ones to
+            encapsulate the logic. A custom hook can return anything that a
+            regular function can return, but it typically returns an array or
+            object containing state values and functions to manipulate that
+            state. That's why I will create a custom hook.
           </p>
         </div>
       </div>
