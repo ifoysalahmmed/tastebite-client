@@ -37,6 +37,7 @@ const useFirebase = () => {
         const loggedUser = result.user;
         toast.success("Successfully Login");
         setUserInfo(loggedUser);
+        navigate(from, { replace: true });
       })
       .catch((error) => {
         const errorMessage = error.message;

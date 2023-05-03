@@ -14,7 +14,7 @@ const Header = () => {
   };
 
   return (
-    <div className="lg:px-8">
+    <div className="py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:px-8">
       <div className="navbar bg-base-100">
         <div className="navbar-start">
           <div className="dropdown">
@@ -59,13 +59,13 @@ const Header = () => {
           </div>
           <div className=" flex items-center">
             <img className="h-8" src={logo} alt="" />
-            <Link to="/" className="btn btn-ghost normal-case text-xl">
+            <Link to="/" className="btn btn-ghost normal-case text-2xl">
               TasteBite
             </Link>
           </div>
         </div>
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal p-0">
+        <div className="navbar-center hidden lg:flex items-center">
+          <ul className="menu menu-horizontal p-0 ">
             <li>
               <NavLink
                 to="/"

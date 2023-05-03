@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FaGoogle, FaGithub } from "react-icons/fa";
 import { AuthContext } from "../../../context/AuthProvider";
 import { getAuth, updateProfile } from "firebase/auth";
@@ -18,6 +18,11 @@ const Registration = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const from = location.state?.from?.pathname || "/";
+
   const auth = getAuth(app);
 
   const handleSubmit = (event) => {
@@ -31,6 +36,7 @@ const Registration = () => {
         form.reset();
         setError("");
         toast.success("Successfully Registered");
+        navigate(from, { replace: true });
         updateProfileInfo();
       })
       .catch((error) => {
@@ -113,7 +119,7 @@ const Registration = () => {
             <div className="form-control">
               <input
                 onBlur={handlePassword}
-                type="text"
+                type="password"
                 placeholder="Password"
                 required
                 className="input input-bordered"

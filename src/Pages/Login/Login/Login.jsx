@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FaGoogle, FaGithub } from "react-icons/fa";
 import { AuthContext } from "../../../context/AuthProvider";
 import { toast } from "react-toastify";
@@ -14,6 +14,11 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const from = location.state?.from?.pathname || "/";
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const form = event.target;
@@ -24,6 +29,7 @@ const Login = () => {
         form.reset();
         setError("");
         toast.success("Successfully Login");
+        navigate(from, { replace: true });
       })
       .catch((error) => {
         const errorMessage = error.message;

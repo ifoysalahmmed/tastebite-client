@@ -11,7 +11,7 @@ const Chefs = () => {
   }, []);
 
   return (
-    <div className="md:grid grid-cols-2 gap-4 p-4">
+    <div className="grid md:grid-cols-3 gap-4 p-4">
       {chefs.map((chef) => (
         <ChefCard key={chef.id} chef={chef}></ChefCard>
       ))}

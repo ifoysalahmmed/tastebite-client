@@ -1,8 +1,8 @@
 import React from "react";
 import Lottie from "lottie-react";
 import cooking from "../../assets/cooking.json";
-import FoodCategories from "./FoodCategories";
 import Chefs from "./Chefs";
+import AdditionalSection from "./AdditionalSection";
 
 const Home = () => {
   return (
@@ -14,11 +14,11 @@ const Home = () => {
             <span className="inline-block text-blue-400">for food?</span>
           </h2>
           <p className="text-base text-white md:text-lg mb-4">
-            Explore Delicious Recipes and Cooking Tips Find inspiration
-            for your next meal with our collection of mouth-watering recipes.
-            From quick and easy dinners to show-stopping desserts, we have
-            something for every taste and occasion. Our expert tips and tricks
-            will help you become a better cook in no time. Start cooking today!
+            Explore Delicious Recipes and Cooking Tips Find inspiration for your
+            next meal with our collection of mouth-watering recipes. From quick
+            and easy dinners to show-stopping desserts, we have something for
+            every taste and occasion. Our expert tips and tricks will help you
+            become a better cook in no time. Start cooking today!
           </p>
           <button className="btn btn-info">Call to Action</button>
         </div>
@@ -30,15 +30,18 @@ const Home = () => {
       </div>
       <div className="my-4">
         <div className=" grid grid-flow-col">
-          <div className=" hidden md:block col-span-3 mr-4 px-2 py-4 bg-slate-600 rounded-lg">
-            <p className=" text-center font-bold text-lg">Food Category</p>
-            <ul className=" mt-4 pl-8 list-disc">
-              <FoodCategories></FoodCategories>
-            </ul>
-          </div>
-          <div className="col-span-9 px-2 py-4 bg-slate-600 rounded-lg">
+          <div className="px-2 py-4 bg-slate-600 rounded-lg">
             <Chefs></Chefs>
           </div>
+        </div>
+      </div>
+
+      <div className="space-y-4">
+        <h2 className="uppercase text-center text-3xl text-cyan-400 font-semibold">
+          Featured Recipes
+        </h2>
+        <div className="grid md:grid-cols-4 gap-4">
+          <AdditionalSection></AdditionalSection>
         </div>
       </div>
     </div>
