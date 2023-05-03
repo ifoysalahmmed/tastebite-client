@@ -6,6 +6,7 @@ import Registration from "../Pages/Login/Registration/Registration";
 import Home from "../Pages/Home/Home";
 import CategoryFood from "../Pages/CategoryFood/CategoryFood";
 import ChefRecipe from "../Pages/ChefRecipe/ChefRecipe";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -26,7 +27,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/chef/:id",
-        element: <ChefRecipe></ChefRecipe>,
+        element: (
+          <PrivateRoute>
+            <ChefRecipe></ChefRecipe>
+          </PrivateRoute>
+        ),
         loader: ({ params }) =>
           fetch(`https://tastebite-server-side.vercel.app/chef/${params.id}`),
       },

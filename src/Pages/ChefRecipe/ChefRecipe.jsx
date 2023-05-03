@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import FoodCategories from "../Home/FoodCategories";
 import RecipeCard from "../RecipeCard/RecipeCard";
+import { toast } from "react-toastify";
 
 const ChefRecipe = () => {
   const chef = useLoaderData();
 
+  const [favorite, setFavorite] = useState(false);
+
   const { img, name, biography, likes, no_recipes, experience, recipes } = chef;
+
+  const handleFavorite = () => {
+    setFavorite(true);
+    toast.success("Recipe successfully added to Favorite");
+  };
 
   return (
     <div className="my-container">
@@ -38,6 +46,16 @@ const ChefRecipe = () => {
         {recipes.map((recipe, index) => (
           <RecipeCard key={index} recipe={recipe}></RecipeCard>
         ))}
+      </div>
+
+      <div className="text-center mt-8">
+        <button
+          onClick={handleFavorite}
+          className="btn btn-warning"
+          disabled={favorite}
+        >
+          Favorite
+        </button>
       </div>
     </div>
   );
