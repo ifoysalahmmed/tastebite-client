@@ -34,8 +34,8 @@ const AdditionalSection = () => {
 
   return (
     <>
-      {featuredRecipes.map((recipe) => (
-        <div className="card card-compact w-full bg-base-100 shadow-2xl p-4">
+      {featuredRecipes.map((recipe, index) => (
+        <div className="card card-compact w-full bg-base-100 shadow-2xl p-4" key={index}>
           <figure>
             <img src={recipe.imageSrc} />
           </figure>

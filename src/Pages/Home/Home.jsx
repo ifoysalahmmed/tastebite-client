@@ -20,7 +20,6 @@ const Home = () => {
             every taste and occasion. Our expert tips and tricks will help you
             become a better cook in no time. Start cooking today!
           </p>
-          <button className="btn btn-info">Call to Action</button>
         </div>
         <div className="relative">
           <div className="w-full lg:w-4/5 lg:ml-auto h-56 sm:h-96">
