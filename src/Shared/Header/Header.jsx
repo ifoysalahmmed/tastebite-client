@@ -13,8 +13,8 @@ const Header = () => {
   };
 
   return (
-    <div className="py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:px-8">
-      <div className="navbar bg-base-100">
+    <div className="py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:px-8 ">
+      <div className="navbar bg-indigo-200 rounded-lg">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -91,7 +91,9 @@ const Header = () => {
                 className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52"
               >
                 <li onClick={handleLogOut}>
-                  <Link>Logout</Link>
+                  <button className="btn btn-warning">
+                    <Link>Logout</Link>
+                  </button>
                 </li>
               </ul>
             </div>

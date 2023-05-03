@@ -29,7 +29,7 @@ const Home = () => {
       </div>
       <div className="my-8">
         <div className=" grid grid-flow-col">
-          <div className="px-2 py-4 bg-slate-600 rounded-lg">
+          <div className="px-2 py-4 bg-teal-600 rounded-lg">
             <Chefs></Chefs>
           </div>
         </div>
@@ -55,21 +55,21 @@ const Home = () => {
                 <img
                   alt="gallery"
                   class="block h-full w-full rounded-lg object-cover object-center"
-                  src="https://th.bing.com/th/id/OIP.ZF7BYYIrCTHDnGdFQC3XIwHaEo?pid=ImgDet&rs=1"
+                  src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/f55b6c139249241.622c1daa472b0.jpg"
                 />
               </div>
               <div class="md:w-1/2 p-1 md:p-2">
                 <img
                   alt="gallery"
                   class="block h-full w-full rounded-lg object-cover object-center"
-                  src="https://i.pinimg.com/originals/cc/bc/ca/ccbcca4711c079d95eef2ef2fb3689ca.jpg"
+                  src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
                 />
               </div>
               <div class="w-full p-1 md:p-2">
                 <img
                   alt="gallery"
                   class="block h-full w-full rounded-lg object-cover object-center"
-                  src="https://th.bing.com/th/id/R.b09dae1d6da8bf6b79d07bcdd79b0a2c?rik=Pl%2bgaDucPKO21w&riu=http%3a%2f%2f2.bp.blogspot.com%2f-1zHcDYt10pI%2fUM1bnKSbaBI%2fAAAAAAAAIcQ%2fNIRixLTvsFs%2fs1600%2ffood.jpg&ehk=oQg7uqh%2fP8eNEzLA60vfLJhFX77%2f46zEwXxfnZkLuW4%3d&risl=&pid=ImgRaw&r=0"
+                  src="https://images.unsplash.com/photo-1633383718081-22ac93e3db65?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=758&q=80"
                 />
               </div>
             </div>
@@ -78,21 +78,21 @@ const Home = () => {
                 <img
                   alt="gallery"
                   class="block h-full w-full rounded-lg object-cover object-center"
-                  src="https://cdn.healthnwell.com/healthnwell/wp-content/uploads/2018/04/8bef1965-2404-4929-ab29-1fdb1eb3b69f.jpg"
+                  src="https://images.unsplash.com/photo-1625398407796-82650a8c135f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
                 />
               </div>
               <div class="md:w-1/2 p-1 md:p-2">
                 <img
                   alt="gallery"
                   class="block h-full w-full rounded-lg object-cover object-center"
-                  src="https://www.verywellfit.com/thmb/WY_NtJB9XE1wZTaKbk2syDPITUc=/3865x2576/filters:fill(FFDB5D,1)/different-types-of-food-on-rustic-wooden-table-861188910-5bd1d6f846e0fb00519d99f9.jpg"
+                  src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
                 />
               </div>
               <div class="md:w-1/2 p-1 md:p-2">
                 <img
                   alt="gallery"
                   class="block h-full w-full rounded-lg object-cover object-center"
-                  src="https://www.restaurant-hospitality.com/sites/restaurant-hospitality.com/files/gallery_promo_image/Top%2010%20August%20Recipes_Dessert%20Recipes.jpg"
+                  src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1071&q=80"
                 />
               </div>
             </div>

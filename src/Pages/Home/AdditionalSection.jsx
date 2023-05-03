@@ -4,38 +4,44 @@ const AdditionalSection = () => {
   const featuredRecipes = [
     {
       id: 1,
-      title: "Classic Spaghetti Carbonara",
+      title: "Recheado Masala Fish",
       description:
-        "This classic Italian dish is made with bacon, eggs, and Parmesan cheese, and is sure to become a family favorite.",
-      imageSrc: "https://bing.com/th?id=OSK.d8dd312ed2e104eba812f12dca8088b8",
+        "Recheado masala fish is a Goan classic. It can be prepared easily on your barbecue.",
+      imageSrc:
+        "https://www.themealdb.com/images/media/meals/uwxusv1487344500.jpg",
     },
     {
       id: 2,
-      title: "Lemon Garlic Chicken Skewers",
+      title: "Nutty Chicken Curry",
       description:
-        "These tender and flavorful chicken skewers are perfect for summertime grilling and outdoor cookouts.",
-      imageSrc: "https://bing.com/th?id=OSK.a8e8c00caab2e53fe6d480b2a69ab836",
+        "Nutty Chicken curry from the Indian subcontinent typically features chicken stewed in a tomato-based sauce seasoned with aromatic spices. ",
+      imageSrc:
+        "https://www.themealdb.com/images/media/meals/yxsurp1511304301.jpg",
     },
     {
       id: 3,
-      title: "Watermelon Feta Salad",
+      title: "Kidney Bean Curry",
       description:
-        "This refreshing salad is the perfect accompaniment to any summer meal.",
-      imageSrc: "https://bing.com/th?id=OSK.9eaa493178fa1c1edb04afe2e36cffc1",
+        "The kidney bean is a variety of the common bean, so named because of its kidney-like shape and its color. The optimum moisture range is 12–14%. The color of kidney beans ranges all the way from very light red to very dark, almost purple.",
+      imageSrc:
+        "https://www.themealdb.com/images/media/meals/sywrsu1511463066.jpg",
     },
     {
       id: 4,
-      title: "Pumpkin Spice Latte",
+      title: "Smoked Haddock Kedgeree",
       description:
-        "This fall favorite is easy to make at home, and can be customized with your choice of milk and sweetener.",
-      imageSrc: "https://bing.com/th?id=OSK.3bb265b959fc599d896a5ae755535a06",
+        "Smoked Haddock is fresh, filleted Haddock that has been smoked over oak and beech wood in a special smoker oven. This provides the Haddock fillet with that irresistible smoky flavour and subtle sweetness. Smoked Haddock can be the foundation of many delicious dishes.",
+      imageSrc: "https://www.themealdb.com/images/media/meals/1550441275.jpg",
     },
   ];
 
   return (
     <>
       {featuredRecipes.map((recipe, index) => (
-        <div className="card card-compact w-full bg-green-200 shadow-2xl p-4" key={index}>
+        <div
+          className="card card-compact w-full bg-green-200 shadow-2xl p-4"
+          key={index}
+        >
           <figure>
             <img src={recipe.imageSrc} />
           </figure>

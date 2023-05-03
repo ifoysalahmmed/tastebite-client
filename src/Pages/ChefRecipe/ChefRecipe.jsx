@@ -17,7 +17,7 @@ const ChefRecipe = () => {
 
   return (
     <div className="my-container">
-      <div className="px-2 py-4 bg-slate-600 rounded-lg">
+      <div className="px-2 py-4 bg-teal-600 rounded-lg">
         <div className="card card-compact w-full bg-cyan-200 shadow-xl">
           <figure>
             <img className="p-8 h-80 w-80" src={img} />

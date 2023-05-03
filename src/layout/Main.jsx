@@ -5,7 +5,7 @@ import Footer from "../Shared/Footer/Footer";
 
 const Main = () => {
   return (
-    <div>
+    <div className="bg-lime-200">
       <Header></Header>
       <div className="min-h-[calc(100vh-134px)]">
         <Outlet></Outlet>
