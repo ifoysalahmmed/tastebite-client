@@ -21,12 +21,13 @@ const Home = () => {
             become a better cook in no time. Start cooking today!
           </p>
         </div>
-        <div className="relative">
-          <div className="w-full lg:w-4/5 lg:ml-auto h-56 sm:h-96">
+        <div className="mb-8 sm:mb-0">
+          <div className="w-full lg:w-4/5 lg:ml-auto">
             <Lottie animationData={cooking} loop={true} />
           </div>
         </div>
       </div>
+
       <div className="my-8">
         <div className=" grid grid-flow-col">
           <div className="px-2 py-4 bg-teal-600 rounded-lg">

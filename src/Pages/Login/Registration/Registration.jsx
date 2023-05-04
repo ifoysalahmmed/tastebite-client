@@ -147,7 +147,7 @@ const Registration = () => {
             </div>
             <div className="form-control">
               <label className="label">
-                <p className="label-text-alt text-warning">{error}</p>
+                <p className="label-text-alt text-red-700 font-medium">{error}</p>
               </label>
             </div>
           </form>
