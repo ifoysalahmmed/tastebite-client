@@ -1,17 +1,39 @@
-# Tastebite
+# 🍕 TasteBite
 
-[Live Site Link](https://tastebite-client-side.web.app/)
+## **Live Link:**
+Hosted in Firebase -> **[TasteBite](https://tastebite-client-side.web.app/)**
 
+## **Backend Link:** 
+Github Repo -> **[Server-side](https://github.com/ifoysalahmmed/tastebite-server)**
 
-[Client side Code Link](https://github.com/programming-hero-web-course-4/b7a10-chef-recipe-hunter-client-side-ifoysalahmmed)
+## **Some key Features of this Project -**
 
-
-[Server side Code Link](https://github.com/programming-hero-web-course-4/b7a10-chef-recipe-hunter-server-side-ifoysalahmmed)
-
-## Features
-
-- Authenticate users
-- Can login with google & github
-- Provide recipes
+- Authenticate users using firebase
+- Users can login with google & github
+- Provide recipes but users must have to login to see recipe details
 - Provide blogs
 - Mobile & Desktop responsive
+
+## **Used packages / technology name for this Project -**
+
+### **Front-end**
+    daisyui,
+    firebase,
+    lottie-react,
+    react,
+    react-dom,
+    react-icons,
+    react-lazy-load,
+    react-lazy-load-image-component,
+    react-router-dom,
+    react-to-pdf,
+    react-toastify,
+    tailwindcss,
+    vite
+
+### **Backend**
+    cors,
+    express,
+    nodemon
+
+    
